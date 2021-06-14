@@ -1,0 +1,112 @@
+<div class="signUpBody">
+    <div class="signUpBodyHead"></div>
+    <div class="navbar">
+        <ul>
+            <li>HOME</li>
+            <li>CLIENTS</li>
+            <li>CAREGIVES</li>
+            <li>TIMESHEETS</li>
+            <li>BILLING</li>
+            <li>PAYMENT</li>
+            <li>REASSESSMENT DUE</li>
+            <li>REPORT</li>
+            <li>LOGOUT</li>
+        </ul>
+    </div>
+    <div class="FormBodyDiv">
+        <div class="fomHeading">
+
+        </div><br>
+        <div class="formBox">
+            <form [formGroup]="signUpForm" (ngSubmit)="signUpFormSubmit()">
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class=" tableData ">
+                                <label>User Name*</label><br>
+                                <input class="ng-invalid " type="text " formControlName="userName">
+                                <div class="error " *ngIf="signUpForm.get( 'userName').hasError( 'required') && signUpForm.get( 'userName').touched ">User Name is required</div>
+                                <div class="error " *ngIf="signUpForm.get( 'userName').hasError( 'pattern') ">First letter Of user name must be capital and contain Alphabets only </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableData ">
+                                <label>Password*</label><br>
+                                <input type="password" formControlName="password">
+                                <div class="error " *ngIf="signUpForm.get( 'password').hasError( 'required') && signUpForm.get( 'password').touched ">Password is required</div>
+                                <div class="error " *ngIf="signUpForm.get( 'password').hasError( 'pattern') ">Confirm password must be atleast 8 characters with one uppercase ,lowercase,symbol and number</div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableData ">
+                                <label>Confirm Password*</label><br>
+                                <input type="password" formControlName="confirmPassword">
+                                <div class="error " *ngIf="signUpForm.get( 'confirmPassword').hasError( 'required') && signUpForm.get( 'confirmPassword').touched ">Confirm Password is required</div>
+                                <div class="error " *ngIf="(signUpForm.get( 'password').value) !==( signUpForm.get( 'confirmPassword').value) && signUpForm.get( 'confirmPassword').dirty ">Password and confirmpassword missmatch</div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="tableData ">
+                                <label>Email address*</label><br>
+                                <input type="text " formControlName="email">
+                                <div class="error " *ngIf="signUpForm.get( 'email').hasError( 'required') && signUpForm.get( 'email').touched ">Email is required</div>
+                                <div class="error " *ngIf="signUpForm.get( 'email').hasError( 'pattern') ">Enter valid Email</div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableData ">
+                                <label>Zip*</label><br>
+                                <input type="text " formControlName="zip">
+                                <div class="error zip " *ngIf="signUpForm.get( 'zip').hasError( 'required') && signUpForm.get( 'zip').touched ">Zip is required</div>
+                                <div class="error " *ngIf="signUpForm.get( 'zip').hasError( 'pattern') ">Pin contains only 6 digit number</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="tableData ">
+                                <label>Address*</label><br>
+                                <input type="text " formControlName="address">
+                                <div class="error " *ngIf="signUpForm.get( 'address').hasError( 'required') && signUpForm.get( 'address').touched ">Address is required</div>
+                                <div class="error " *ngIf="signUpForm.get( 'address').hasError( 'pattern') ">Address contain only letters and number $ with in 50 word</div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableData ">
+                                <label>City*</label><br>
+                                <input type="text " formControlName="city">
+                                <div class="error " *ngIf="signUpForm.get( 'city').hasError( 'required') && signUpForm.get( 'city').touched ">City Name is required</div>
+                                <div class="error " *ngIf="signUpForm.get( 'city').hasError( 'pattern') ">City contain only alphabets$ with in 20 word</div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableData ">
+                                <label>Pin*</label><br>
+                                <input type="text " formControlName="pin">
+                                <div class="error " *ngIf="signUpForm.get( 'pin').hasError( 'required') && signUpForm.get( 'pin').touched ">Enter Required area pin</div>
+                                <div class="error " *ngIf="signUpForm.get( 'pin').hasError( 'pattern') ">Pin contains only 6 digit number</div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="buttons ">
+                    <button class="register ">Register</button>
+                    <button class="cancle " routerLink="/login" routerLinkActive="activebutton">Cancle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer ">
+        <p>@OnBoarding and Billig Client and Employee billing system , All Rights Reserved </p>
+    </div>
+</div>

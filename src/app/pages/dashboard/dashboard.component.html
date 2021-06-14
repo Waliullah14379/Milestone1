@@ -1,0 +1,139 @@
+<div class="mainBodyDiv">
+    <div class="navbar">
+
+        <ul>
+            <li routerLink="/dashboard" routerLinkActive="activebutton">HOME</li>
+            <li>CLIENTS</li>
+            <li>CAREGIVES</li>
+            <li>TIMESHEETS</li>
+            <li>BILLING</li>
+            <li>PAYMENT</li>
+            <li>REASSESSMENT DUE</li>
+            <li>REPORT</li>
+            <li data-toggle="modal" data-target="#myModal" (click)="showModal=true">LOGOUT</li>
+            <li class="userDetails"></li>
+        </ul>
+    </div>
+    <div class="buttonRightDiv">
+        <button routerLink="/signUp" routerLinkActive="activebutton">Register User</button>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="childBox">
+                <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="childBox score">562</div>
+
+            <div class="childBox">
+                <p>Total Client</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+            </div>
+            <div class="childBox score">32</div>
+
+            <div class="childBox">
+                <p>Total CareGivers</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon">
+                    <i class="fas fa-list-alt"></i>
+                </div>
+            </div>
+            <div class="childBox score">1024</div>
+
+            <div class="childBox">
+                <p>Total Timesheets</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="childBox score">56</div>
+
+            <div class="childBox">
+                <p>Total assigned Caregivers</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="childBox score">456</div>
+
+            <div class="childBox">
+                <p>Not assigned Caregivers</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon"></div>
+            </div>
+            <div class="childBox score">89</div>
+
+            <div class="childBox">
+                <p>Total branch</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+            </div>
+            <div class="childBox score">97</div>
+
+            <div class="childBox">
+                <p>Total Billing</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="childBox">
+                <div class="icon"></div>
+            </div>
+            <div class="childBox score">8457</div>
+
+            <div class="childBox">
+                <p>Total payment</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>@OnBoarding and Billig Client and Employee billing system , All Rights Reserved </p>
+    </div>
+    <!-- modal starts from here -->
+    <div id="myModal" class="modal">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="close  btn " data-dismiss="modal">&times;</button>
+                </div> -->
+                <div class="modal-body">
+                    <h3>Are you sure you want to Sine Out</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-lg " data-dismiss="modal" routerLink="/dashboard" routerLinkActive="activebutton">cancle</button>
+
+                    <button type="button" class="btn btn-info btn-lg " data-dismiss="modal" routerLink="/login" routerLinkActive="activebutton">Sine Out</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

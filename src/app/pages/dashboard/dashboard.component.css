@@ -1,0 +1,132 @@
+.mainBodyDiv {
+    background-color: rgb(6, 6, 80);
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    color: white;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(4, 4, 61);
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    font-size: 20px;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 6px;
+    margin-left: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(3, 3, 97);
+    border-bottom: 1px solid red;
+}
+
+.buttonRightDiv button {
+    float: right;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-right: 150px;
+    height: 35px;
+    background-color: rgb(6, 6, 80);
+    color: white;
+}
+
+.buttonRightDiv:hover {
+    cursor: pointer;
+    background-color: rgb(38, 38, 143);
+}
+
+.container {
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+    background-color: rgb(16, 16, 147);
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.childBox p {
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.icon {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 250, 255);
+    /* margin: 20px; */
+}
+
+i {
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.score {
+    font-size: 30px;
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.box:hover {
+    border: 2px solid red;
+}
+
+.childBox {}
+
+.fa,
+.fas {
+    color: black;
+}
+
+.footer {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    background-color: rgb(4, 4, 61);
+}
+
+.footer p {
+    padding-left: 500px;
+}
+
+.modal .show {
+    display: block;
+}
+
+.btn-danger {
+    margin-right: 200px;
+}
+
+.btn-info {
+    margin-right: 60px;
+}
+
+
+/* [ngClass]="{'show': showModel}" */

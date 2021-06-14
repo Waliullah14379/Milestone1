@@ -1,0 +1,22 @@
+<div class="bodyDiv">
+    <div class="mainFormDiv">
+        <div class="formHeading"><img class="formHeadingLogo" src="../../../assets/logo.png" alt="logo Display"></div>
+        <div class="formDiv">
+            <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                <input type="text" ngModel placeholder="Company ID*" formControlName="companyId"><br>
+                <div class="error" *ngIf="loginForm.get('companyId').hasError('required') && loginForm.get('companyId').touched">Company ID is required</div>
+                <input type="text" ngModel placeholder="Company Name*" formControlName="companyName"><br>
+                <div class="error" *ngIf="loginForm.get('companyName').hasError('required') && loginForm.get('companyName').touched">Company Name is required</div>
+                <input type="password" ngModel placeholder="Password*" formControlName="password"><br>
+                <div class="error" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">Email field is required</div>
+                <div class="error" *ngIf="loginForm.get('password').hasError('pattern')">First letter must be capital and minumum 6 char</div>
+                <button [disabled]="loginForm.invalid">LOGIN</button>
+            </form>
+            <ul class="setReset">
+                <li class="forgerReset"><a routerLink="/forgetPassword" routerLinkActive="activebutton">Forget Password</a></li>
+                <li class="forgerReset"><a routerLink="/forgetPassword" routerLinkActive="activebutton">Reset Password</a></li>
+            </ul><br>
+            <p class="newUser">New user <a routerLink="/signUp" routerLinkActive="activebutton">Sign In</a></p>
+        </div>
+    </div>
+</div>

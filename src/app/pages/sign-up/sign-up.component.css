@@ -1,0 +1,145 @@
+.signUpBody {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(5, 5, 44);
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    color: white;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(4, 4, 61);
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    font-size: 20px;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 6px;
+    margin-left: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(3, 3, 97);
+    border-bottom: 1px solid red;
+}
+
+.FormBodyDiv {
+    width: 70vw;
+    height: 80vh;
+    position: relative;
+    margin: auto;
+    top: 25px;
+}
+
+.formBox {
+    position: relative;
+    /* border: 1px solid white; */
+    width: 55vw;
+    height: 40vh;
+    left: 150px;
+    padding-top: 5px;
+}
+
+.fomHeading {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url("../../../assets/background.png");
+    background-size: cover;
+    position: relative;
+    left: 30vw;
+    top: 20px;
+    border: 2px solid rgb(238, 28, 168);
+}
+
+input {
+    background-color: rgb(3, 3, 83);
+    padding: 2px;
+    margin-left: 15px;
+}
+
+label {
+    margin-left: 15px;
+}
+
+input,
+select,
+textarea {
+    color: rgb(214, 208, 208);
+    font-size: 20px;
+}
+
+.FormBodyDiv {
+    background-color: rgb(2, 2, 54);
+}
+
+form {
+    color: white;
+    font-size: 20px;
+}
+
+input {
+    /* height: 28px; */
+    width: 300px;
+}
+
+.tableData {
+    margin-top: 20px;
+}
+
+.buttons {
+    position: relative;
+    left: 250px;
+    top: 20px;
+}
+
+button {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(24, 88, 4);
+}
+
+.cancle {
+    border: 1px solid rgb(240, 56, 179);
+    background-color: rgb(4, 4, 61);
+}
+
+.register {
+    background-color: rgb(240, 56, 179);
+}
+
+.footer {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    background-color: rgb(4, 4, 61);
+}
+
+.footer p {
+    padding-left: 500px;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+    margin-left: 15px;
+}
